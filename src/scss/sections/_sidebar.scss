@@ -1,0 +1,23 @@
+.app__sidebar {
+	margin: 0px 10px 0px 0px;
+}
+.sidebar {
+	background-color: $accent-sec;
+	padding: 20px;
+	flex: 0 0 22%;	
+}
+.nav-profile {
+	padding: 0;
+	& li {
+		list-style: none;
+		padding: 5px 0;
+	}
+	&__link {
+		text-decoration: none;
+		font-size: 16px;
+		color: #fff;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

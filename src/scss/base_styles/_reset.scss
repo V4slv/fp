@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity .3s;
+}
+::-moz-placeholder {
+  opacity: 1;
+  transition: opacity .3s;
+}
+:-moz-placeholder {
+  opacity: 1;
+  transition: opacity .3s;
+}
+:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity .3s;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}

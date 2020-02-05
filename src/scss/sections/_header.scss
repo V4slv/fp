@@ -1,0 +1,14 @@
+.header {
+	background-color: $accent;
+	&__inner {
+		padding: 15px;
+	}
+}
+
+.logo {
+	max-width: 50px;
+	max-height: 50px;
+	&__img {
+		max-width: 100%;
+	}
+}

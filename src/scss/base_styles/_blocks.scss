@@ -1,0 +1,67 @@
+.burger-btn {
+	display: none;
+	width: 30px;
+	height: 20px;
+	position: relative;
+	cursor: pointer;
+	z-index: 5;
+	@include small {
+		display: block;
+	}
+	&__line,
+	&__line::before,
+	&__line::after{
+		width: 30px;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		transition: all .3s ease;
+	}
+	&__line {
+		top: 9px;
+		&::before	{
+			content: '';
+			top: -9px;
+		}
+		&::after	{
+			content: '';
+			top: 9px;
+		}
+	}
+	&.active .burger-btn__line,
+	&.active .burger-btn__line::before,
+	&.active .burger-btn__line::after {
+		transition: all .3s ease;
+	}
+	&.active .burger-btn__line {
+		height: 0;
+		&::before {
+			transform: rotate(-45deg);
+			top: 0;
+		}
+		&::after {
+			transform: rotate(45deg);
+			top: 0;
+		}
+	}
+}
+
+.button {
+	text-decoration: none;
+	outline: none;
+	border: none;
+	padding: 8px 30px;
+	background-color: $accent;
+	border-radius: 5px;
+	font-weight: 600;
+	color: $light-text;
+	transition: .2s;
+	display: inline-block;
+	&:hover {
+		background-color: darken($accent, 10%);
+		transition: .2s;
+	}
+	&:active {
+		outline: none;
+	}
+}
